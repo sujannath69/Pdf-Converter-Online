@@ -3,10 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DearPDF - Free & Private Client-Side PDF Tools</title>
-    <meta name="description" content="A free, client-side PDF tool suite that works in your browser. Merge, split, compress, convert, protect, and edit PDFs without uploading your files.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
+    <title>DearPDF - Free & Private Client-Side PDF Update the previously generated “DearPDF” PDF tools project (HTML + CSS + JS) with these two improvements for better usability:
+
+---
+
+🔧 Part 1: Fix Tool Close/Back Button
+- Each tool section (Merge PDF, Split PDF, etc.) should have a clearly visible “Close” or “Back” button.
+- When clicked, it should:
+  - Hide the active tool section.
+  - Show the main tool list or homepage again.
+  - Use smooth class toggling (like Tailwind `hidden` / `block`) or JS with `display: none`.
+- Ensure only one tool section is visible at a time.
+- Prevent stacking multiple open tool UIs.
+
+---
+
+🔧 Part 2: Sidebar/Menu Toggle Fix
+- The left sidebar or menu that opens tools should have a **toggle button (hamburger ☰)** to open AND close it.
+- When opened, clicking again or pressing a close icon (like ❌) should hide the sidebar.
+- Use JavaScript to handle sidebar toggling (`classList.toggle()` or similar).
+- Make sure it works well on mobile (responsive).
+- Add animation (optional) for sliding in/out effect.
+- If the user selects a tool, the sidebar can auto-close for better mobile UX.
+
+---
+
+📄 Code Requirements:
+- Keep the project in a single `index.html` file.
+- Use CDN links for Tailwind CSS and `pdf-lib`.
+- Keep JavaScript inline or in `<script>` tags at the bottom.
+- Add clear comments in code to indicate where changes are made.
+
+This site must still work fully offline (client-side only) with all tools functional like before.
+
+---
+
+Please regenerate the full HTML file with these updates and improvements.
         /* Custom Styles & TailwindCSS Base */
         @tailwind base;
         @tailwind components;
